@@ -6,5 +6,3 @@ $args = array(
 'orderby' => 'post_date',
 $old_post - new WP_Query( $args);
 print_r( $old_post->post);
-	
-}
