@@ -1,5 +1,6 @@
 <?php
 /**
+ * Undocumented function
  * Plugin Name:       custom-shortcode
  * Plugin URI:        https://sb.hyphenate.in//plugins/post-list/
  * Description:       To list down last five post.
@@ -13,12 +14,21 @@
  * Update URI:        https://example.com/my-plugin/
  * Text Domain:       post-list
  * Domain Path:       /languages
+ * @since 0.0.0
  */
 
-add_shortcode('custom-shortcode','post-list');
-function post-list(){
-$args = array(
-'post_status' => 'publish',
-'orderby' => 'post_date',
-$old_post - new WP_Query( $args);
-print_r( $old_post->post);
+
+add_shortcode( 'custom-shortcode', 'post_list' );
+
+function post_list(){
+    $args = array(
+        'post_status'   => 'publish',
+        'post_per_page' => 5,
+        'orderby'       => 'post_date',
+        'order'         => 'DESC'
+    );
+    $old_post = new WP_Query( $args);
+    
+    print_r( $old_post->post);
+    wp_reset_postdata();
+}
