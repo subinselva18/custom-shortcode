@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name:       custom-shortcode
  * Plugin URI:        https://sb.hyphenate.in//plugins/post-list/
@@ -14,8 +15,6 @@
  * Domain Path:       /languages
  */
 
-
-<?php
 add_shortcode('custom-shortcode','post-list');
 function post-list(){
 $args = array(
