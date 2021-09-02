@@ -1,7 +1,7 @@
 <?php
 /**
  * Undocumented function
- * Plugin Name:       custom shortcode
+ * Plugin Name:       custom-shortcode
  * Plugin URI:        https://sb.hyphenate.in//plugins/post-list/
  * Description:       To list down last five post.
  * Version:           1.0.0
@@ -18,7 +18,7 @@
  */
 
 
-add_shortcode( 'custom-shortcode', 'post_list' );
+add_shortcode( 'custom_shortcode', 'post_list' );
 
 function post_list(){
     $args = array(
