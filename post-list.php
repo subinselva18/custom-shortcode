@@ -20,6 +20,8 @@
 
 add_shortcode( 'custom_shortcode', 'post_list' );
 
+// function to test php file to return the list of 5 old post
+
 function post_list(){
     $args = array(
         'post_status'   => 'publish',
