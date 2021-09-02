@@ -1,7 +1,7 @@
 <?php
 /**
  * Undocumented function
- * Plugin Name:       custom-shortcode
+ * Plugin Name:       custom shortcode
  * Plugin URI:        https://sb.hyphenate.in//plugins/post-list/
  * Description:       To list down last five post.
  * Version:           1.0.0
@@ -27,8 +27,6 @@ function post_list(){
         'orderby'       => 'post_date',
         'order'         => 'DESC'
     );
-    $old_post = new WP_Query( $args);
-    
-    print_r( $old_post->post);
-    wp_reset_postdata();
+    $old_post = new WP_Query( $args );
+    print_r( $old_post->post );
 }
