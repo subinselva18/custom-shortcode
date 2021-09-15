@@ -22,11 +22,19 @@
  * Domain Path:       /languages
  **/
 
-// add custom shortcode.
-add_shortcode( 'custom_shortcode', 'custom_shortcode' );
+defined( 'ABSPATH' ) || exit;
 
-// Function To test php file to return the list of 5 old post.
+// adds the custom shortcode.
+add_shortcode( 'custom_shortcode', 'custom_shortcode_get_posts' );
 
+// adds the custom stylesheet.
+add_action( 'wp_enqueue_scripts', 'enqueue_style' );
+
+/**
+ * Fetches the oldest 5 posts.
+ *
+ * @since 1.0.0
+ */
 function custom_shortcode() {
 	// Declaring a $args variable and assigning the static values to the properties.
 	$args     = array(
