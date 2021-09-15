@@ -1,13 +1,13 @@
 <?php
 /**
- * Main plugin file
+ * Shortcode Plugin File
  *
  * @package custom-shortcode
  * @since 1.0.0
  * @version 1.0.0
  *
  * Undocumented function
- * Plugin Name:       custom-shortcode
+ * Plugin Name:       Custom-Shortcode
  * Plugin URI:        http://159.65.148.33/plugins/custom-shortcode/
  * Description:       To list down last five post.
  * Version:           1.0.0
@@ -16,8 +16,8 @@
  * Author:            Subin-Selva
  * Author URI:        http://159.65.148.33/
  * License:           GPL v2 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Update URI:        https://example.com/my-plugin/
+ * License URI:       http://159.65.148.33/licenses/gpl-2.0.html
+ * Update URI:        http://159.65.148.33/my-plugin/
  * Text Domain:       post-list
  * Domain Path:       /languages
  **/
