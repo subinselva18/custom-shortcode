@@ -25,9 +25,9 @@
 // add custom shortcode.
 add_shortcode( 'custom_shortcode', 'custom_shortcode' );
 
-// *function to test php file to return the list of 5 old post
+// Function To test php file to return the list of 5 old post.
 
-// function custom_shortcode() {
+function custom_shortcode() {
 	// Declaring a $args variable and assigning the static values to the properties.
 	$args     = array(
 		'post_status'   => 'publish',
@@ -36,6 +36,15 @@ add_shortcode( 'custom_shortcode', 'custom_shortcode' );
 		'order'         => 'DESC',
 	);
 	$old_post = new WP_Query( $args );
+	// Printing 5 oldest post.
 	print_r( $old_post->post );
-	//
+	// Loops to get post from $old_post.
+	foreach ( $old_post->posts as $old_post ) {
+		/**
+		 * Includes the template file.
+		 *
+		 * @since 1.0.0
+		 */
+		include 'templates/custom-shortcode.php';
 	}
+}
