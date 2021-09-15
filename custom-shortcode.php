@@ -4,7 +4,7 @@
  *
  * @package custom-shortcode
  * @since 1.0.0
- * @version
+ * @version 1.0.0
  *
  * Undocumented function
  * Plugin Name:       custom-shortcode
@@ -22,11 +22,13 @@
  * Domain Path:       /languages
  **/
 
+// add custom shortcode.
 add_shortcode( 'custom_shortcode', 'custom_shortcode' );
 
 // *function to test php file to return the list of 5 old post
 
-function custom_shortcode() {
+// function custom_shortcode() {
+	// Declaring a $args variable and assigning the static values to the properties.
 	$args     = array(
 		'post_status'   => 'publish',
 		'post_per_page' => 5,
@@ -35,4 +37,5 @@ function custom_shortcode() {
 	);
 	$old_post = new WP_Query( $args );
 	print_r( $old_post->post );
-}
+	//
+	}
