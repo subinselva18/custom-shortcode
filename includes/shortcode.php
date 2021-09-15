@@ -7,8 +7,8 @@
  * @version 1.0.0
  *
  * Undocumented function
- * Plugin Name:       Custom-Shortcode
- * Plugin URI:        http://159.65.148.33/plugins/custom-shortcode/
+ * Plugin Name:       Custom Shortcode
+ * Plugin URI:        http://159.65.148.33/plugins/Custom-Shortcode/
  * Description:       To list down last five post.
  * Version:           1.0.0
  * Requires at least: 5.2
