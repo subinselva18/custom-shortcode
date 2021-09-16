@@ -53,7 +53,7 @@ function custom_shortcode() {
 		 *
 		 * @since 1.0.0
 		 */
-		include 'templates/custom-shortcode.php';
+		include CS_PATH . 'templates/custom-shortcode.php';
 	}
 }
 /**
