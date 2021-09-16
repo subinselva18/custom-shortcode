@@ -35,7 +35,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_style' );
  *
  * @since 1.0.0
  */
-function custom_shortcode() {
+function custom_shortcode_get_posts() {
 	// Declaring a $args variable and assigning the static values to the properties.
 	$args     = array(
 		'post_status'   => 'publish',
